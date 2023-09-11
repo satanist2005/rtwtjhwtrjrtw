@@ -1,0 +1,124 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ .container{
+    width: 1170;
+    margin: 0 auto;
+  }
+
+  body{
+    font-family: Montserrat;
+  }
+
+  // header
+
+  .header{
+    position: absolute;
+    width: 100%;
+    padding: 40px 0;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block{
+        display: flex;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        margin-right: 40px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+    &__btn{
+        padding: 8px 29px;
+        
+        &_g{
+            background-color: rgb(12, 78, 27);
+            & .header__button{
+                color: #ffffff;
+            }
+        }
+    }
+  }
+
+  //main
+
+.main{
+    &__wrap{
+        display: flex;
+    }
+    &__title{
+        font-size: 68px;
+        font-weight: 500;
+        color: rgb(12, 78, 27);
+    }
+    &__texts{
+        padding: 186px 72px 110px 72px;
+    }
+    &__text{
+        color: #0f0d0d;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    &__btns{
+        display: flex;
+        margin-right: -100px;
+    }
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        padding: 38px 40px;
+        &_g{
+            background-color: rgb(12, 78, 27);
+        }
+    }
+    &__link{
+        color: #333;
+        font-weight: 500;
+        font-size: 24px;
+        text-decoration: none;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        &_p::before{
+            content: '';
+            display: block;
+            width: 21px;
+            height: 18px;
+            background: url('../img/arrow-back.svg') no-repeat center center/ cover;
+            margin-right: 13px;
+            
+        }
+        &_n{
+            color: #F2F2F2;
+            &::after{
+                content: '';
+                display: block;
+                width: 21px;
+                height: 18px;
+                background: url('../img/arrow-forward.svg') no-repeat center center/ cover;
+                margin-left: 13px;
+            }
+        }
+    }
+    &__info{
+        
+        font-size: 32px;
+        font-weight: 500;
+        &_w{
+            color: rgb(255, 255, 255);
+        }
+    }
+
+}
